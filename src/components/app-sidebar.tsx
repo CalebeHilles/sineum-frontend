@@ -1,4 +1,4 @@
-import { Home, BookUser, NotebookPen, Settings } from "lucide-react"
+import { Home, NotebookPen, Settings } from "lucide-react"
 
 import {
   Sidebar,
@@ -16,11 +16,6 @@ const items = [
     title: "Home",
     url: "/",
     icon: Home,
-  },
-  {
-    title: "Portfolio",
-    url: "https://calebe.vercel.app",
-    icon: BookUser,
   },
   {
     title: "Posts",
