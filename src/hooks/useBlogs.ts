@@ -13,7 +13,7 @@ export function useBlogs() {
   };
 }
 
-export function useBlog(id: number) {
+export function useBlog(id: string) {
   const { data, isLoading, error } = useFetch<Blog>(`${API_URL}/blogs/${id}`);
 
   return {
