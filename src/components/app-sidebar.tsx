@@ -34,7 +34,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Kleb.letter</SidebarGroupLabel>
+          <SidebarGroupLabel>Sineum</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

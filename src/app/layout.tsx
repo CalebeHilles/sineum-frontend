@@ -13,8 +13,8 @@ const SourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Kleb.letter",
-  description: "Calebe's trajectory documentation",
+  title: "Sineum",
+  description: "Here you see the best blogs",
 };
 
 export default function RootLayout({
