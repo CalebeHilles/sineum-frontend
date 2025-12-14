@@ -21,7 +21,8 @@ function useFetch<T>(url: string | null) {
       try {
         const response = await fetch(url as string);
         if (!response.ok) {
-          throw new Error("Invalid value");
+          const errorText = await response.text();
+          throw new Error(errorText);
         }
         const json = await response.json();
         setData(json);
