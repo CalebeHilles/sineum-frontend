@@ -1,8 +1,8 @@
-export default function Error() {
+export default function Error({ errorMessage }: { errorMessage: string }) {
   return (
     <div className="flex justify-center">
       <h1 className="text-2xl">Error</h1>
-      <p>No blog with this name found</p>
+      <p>{errorMessage}</p>
     </div>
   );
 }

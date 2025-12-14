@@ -15,7 +15,7 @@ export default function Post({ params }: { params: Promise<{ id: string }> }) {
   }
 
   if (error) {
-    return <Error />;
+    return <Error errorMessage={error.message} />;
   }
   console.log(blog);
 

@@ -13,7 +13,7 @@ export default function Posts() {
   }
 
   if (error) {
-    return <Error />;
+    return <Error errorMessage={error.message} />;
   }
 
   return (
