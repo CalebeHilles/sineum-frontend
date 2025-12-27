@@ -1,4 +1,4 @@
-import { Home, NotebookPen, Settings } from "lucide-react"
+import { Home, NotebookPen, Pen, Settings } from "lucide-react"
 
 import {
   Sidebar,
@@ -24,9 +24,14 @@ const items = [
   },
   {
     title: "Settings",
-    url: "#",
+    url: "/settings",
     icon: Settings,
   },
+  {
+    title: "New post",
+    url: "/new-post",
+    icon: Pen,
+  }
 ]
 
 export function AppSidebar() {
