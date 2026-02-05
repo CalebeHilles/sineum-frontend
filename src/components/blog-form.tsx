@@ -24,8 +24,10 @@ const formSchema = z.object({
     .string()
     .min(3, "Title should be above 3 characters")
     .max(200, "Title should be under 200 characters"),
-  description: z.string(),
-  content: z.string(),
+  description: z
+    .string()
+    .max(5000, "Description should be under 5000 characters"),
+  content: z.string().min(3, "Content should be above 3 characters"),
 });
 
 const fields = ["title", "description", "content"] as const;
